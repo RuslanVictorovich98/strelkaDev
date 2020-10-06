@@ -5,7 +5,7 @@ const App = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/mainPage" exact component={() => <div>Main Page</div>} />
+                <Route path="" exact component={() => <div>Main Page</div>} />
                 <Route component={() => <h1 style={{ textAlign: 'center' }}>404 not found</h1>} />
             </Switch>
         </Router>
