@@ -1,0 +1,15 @@
+.formWrapper{
+  max-width: 500px;
+  background: #c6bebe;
+}
+
+.formBodyWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.formBodyWrapper input{
+height: 25px;
+}
