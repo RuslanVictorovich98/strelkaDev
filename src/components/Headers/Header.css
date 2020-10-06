@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header-site {
+    padding: 1px 0;
+    /* padding-bottom: 10px; */
+    background-color: #333333;
+    position: absolute;
+}
+
+.header-site h2 {
+    text-align: center;
+}
+
+.header-site h3 {
+    margin-top: 537%;
+    text-align: center;
+    margin-left: 1px;
+}
