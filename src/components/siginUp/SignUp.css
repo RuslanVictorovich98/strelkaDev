@@ -1,15 +1,52 @@
-.formWrapper{
-  max-width: 500px;
-  background: #c6bebe;
+.formWrapper {
+    max-width: 500px;
+    margin: 200px auto;
+    border-radius: 3px;
+    background: #b4b6b6;
+    font-family: Roboto, sans-serif;
+    color: black;
 }
 
-.formBodyWrapper{
-  display: flex;
-  flex-direction: column;
+.titleForm {
+    text-align: center;
+    padding: 20px;
+}
+
+.formBodyWrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 
-
-.formBodyWrapper input{
-height: 25px;
+.formInput {
+    height: 25px;
+    margin: 0 20px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: none;
 }
+
+.formBodyWrapper label {
+    padding: 10px 20px 0;
+}
+
+.genderInput {
+    padding: 10px 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.genderInput label{
+    padding: 0 20px 0 0;
+}
+
+.genderInput span {
+    display: flex;
+    align-items: center;
+}
+
+
+.formButton {
+    margin: 10px 0 0;
+}
+
