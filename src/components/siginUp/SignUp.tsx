@@ -2,6 +2,7 @@ import React from 'react'
 import {Formik, Field} from 'formik';
 import './SignUp.css'
 import {Button} from 'antd';
+import {Input, TextField} from '@material-ui/core';
 import 'antd/dist/antd.css'
 import {initialState} from "../../store/reducers/training";
 // export const SignUp = () => {
@@ -49,73 +50,45 @@ export const SignUp = () => (
                 <form onSubmit={handleSubmit}>
 
                     <div className={"formBodyWrapper"}>
-                        <label htmlFor="name">Name</label>
-                        <input
-                            className="formInput"
-                            type="text"
-                            name="name"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.name}
+                        <TextField
+                            className="fieldInputs"
+                            id="outlined-password-input"
+                            label="Name"
+                            type="name"
+                            autoComplete="current-password"
+                            variant="outlined"
                         />
-                        <label htmlFor="surname">Surname</label>
-                        <input
-                            className="formInput"
-                            type="surname"
-                            name="surname"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.surname}
+                        <TextField
+                            className="fieldInputs"
+                            id="outlined-password-input"
+                            label="Surname"
+                            type="Surname"
+                            autoComplete="current-password"
+                            variant="outlined"
                         />
-                        <div className="genderInput">
-                            <label htmlFor="email">Gender</label>
-                            <span>
-                                <span>Мужской</span>
-                            {/*<input*/}
-                            {/*    className="formInput"*/}
-                            {/*    type="radio"*/}
-                            {/*    name="gender"*/}
-                            {/*    onClick={() => {values.gender = true}}*/}
-                            {/*    onBlur={handleBlur}*/}
-                            {/*    checked={values.gender || initialValues.gender}*/}
-                            {/*    // value={values.gender}*/}
-                            {/*/>*/}
-                                <Field type="checkbox" name="gender" value = "mean" />
-                            </span>
-                            <span>
-                              <span>женский</span>
-                                {/*<input*/}
-                                {/*    className="formInput"*/}
-                                {/*    type="radio"*/}
-                                {/*    name="gender"*/}
-                                {/*    onClick={() => {console.log('нажав');values.gender = false}}*/}
-                                {/*    onBlur={handleBlur}*/}
-                                {/*    checked ={values.gender || initialValues.gender}*/}
-                                {/*    // value={values.email}*/}
-                                {/*/>*/}
-                                <Field type="checkbox" name="gender" value = "female" />
-                          </span>
-
-                        </div>
-                        <label htmlFor="surname">Email Address</label>
-                        <input
-                            className="formInput"
-                            type="text"
-                            name="email"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.email}
-                        />
-                        {errors.email && touched.email && errors.email}
-                        <label htmlFor="password">Password</label>
-                        <input
-                            className="formInput"
+                        <TextField
+                            className="fieldInputs"
+                            id="outlined-password-input"
+                            label="Email"
                             type="password"
-                            name="password"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.password}
+                            // autoComplete="current-password"
+                            variant="outlined"
                         />
+                        <TextField
+                            className="fieldInputs"
+                            id="outlined-password-input"
+                            label="password"
+                            type="password"
+                            // autoComplete="current-password"
+                            variant="outlined"
+                        />
+                        {/*<TextField*/}
+                        {/*    id="outlined-password-input"*/}
+                        {/*    label="Password"*/}
+                        {/*    type="password"*/}
+                        {/*    autoComplete="current-password"*/}
+                        {/*    variant="outlined"*/}
+                        {/*/>*/}
                         {errors.password && touched.password && errors.password}
                         {/*<button type="submit" disabled={isSubmitting}>*/}
                         {/*    Submit*/}
@@ -129,3 +102,4 @@ export const SignUp = () => (
         </Formik>
     </div>
 );
+

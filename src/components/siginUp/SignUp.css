@@ -1,52 +1,76 @@
 .formWrapper {
+    display: flex;
+    flex-direction: column;
+
+
     max-width: 500px;
+    min-height: 450px;
     margin: 200px auto;
     border-radius: 3px;
-    background: #b4b6b6;
+    background: #ffffff;
     font-family: Roboto, sans-serif;
     color: black;
 }
 
-.titleForm {
+.formWrapper h1{
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .formBodyWrapper {
     display: flex;
     flex-direction: column;
-}
-
-
-.formInput {
-    height: 25px;
-    margin: 0 20px;
-    padding: 3px 5px;
-    border-radius: 3px;
-    border: none;
-}
-
-.formBodyWrapper label {
-    padding: 10px 20px 0;
-}
-
-.genderInput {
-    padding: 10px 20px 0;
-    display: flex;
     align-items: center;
+    justify-content: space-around;
+    min-height: 300px;
+
 }
 
-.genderInput label{
-    padding: 0 20px 0 0;
-}
+.fieldInputs{
+    width: 400px;
 
-.genderInput span {
-    display: flex;
-    align-items: center;
 }
 
 
-.formButton {
-    margin: 10px 0 0;
-}
+
+
+
+
+/*.titleForm {*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*}*/
+
+
+/*.formInput {*/
+/*    height: 25px;*/
+/*    margin: 0 20px;*/
+/*    padding: 3px 5px;*/
+/*    border-radius: 3px;*/
+/*    border: none;*/
+/*}*/
+
+/*.formBodyWrapper label {*/
+/*    padding: 10px 20px 0;*/
+/*}*/
+
+/*.genderInput {*/
+/*    padding: 10px 20px 0;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.genderInput label{*/
+/*    padding: 0 20px 0 0;*/
+/*}*/
+
+/*.genderInput span {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+
+/*.formButton {*/
+/*    margin: 10px 0 0;*/
+/*}*/
 
